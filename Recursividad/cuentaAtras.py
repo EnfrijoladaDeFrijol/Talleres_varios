@@ -6,5 +6,13 @@ def contarAtras(miNumero):
     else:
         print("Fin de la recursividad")
 
-contarAtras(10) # Mandamos a llamar a la función
+def contarAtras2(miNumero):
+    if (miNumero > 0):
+        print(miNumero) # Primero imprimimos el valor
+        contarAtras2(miNumero - 1) # Con operación en la función
+    else:
+        print("Fin de la recursividad 2")
+
+contarAtras(10)
+contarAtras2(10) # Mandamos a llamar a la función
 
